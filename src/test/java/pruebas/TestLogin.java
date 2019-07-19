@@ -19,7 +19,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
  */
 public class TestLogin {
 
-	//hacer global la variable
+	//Hacer global la variable para ser llamada desde el test
 	WebDriver driverChrome;
 	
 	
