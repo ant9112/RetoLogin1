@@ -19,7 +19,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
  */
 public class TestLogin {
 
-	//Hacer global la variable para ser llamada desde el test
+	//Global la variable para ser llamada desde el test
 	WebDriver driverChrome;
 	
 	
@@ -32,7 +32,7 @@ public class TestLogin {
 	public void setUp() throws Exception {
 
 		/**
-		 * PARA INGRESO AL CURSO correo: ddemostracion6@gmail.com contraseña :
+		 * PARA INGRESO AL CURSO correo: ddemostracion6@gmail.com contraseÃ±a :
 		 * Prueba2019*
 		 */
 
@@ -42,7 +42,7 @@ public class TestLogin {
 		// INSTANCIAR EL DRIVER
 		driverChrome = new ChromeDriver();
 
-		//Abrir la página
+		//Abrir la pÃ¡gina
 		driverChrome.get("https://startupslab.co/");
 		
 		// Maximizar la pantalla
@@ -66,7 +66,7 @@ public class TestLogin {
 	@Test
 	public void testLogin() {
 
-		//Buscar botón inicio de sesión
+		//Buscar botÃ³n inicio de sesiÃ³n
 		WebElement botonInicioSesion = driverChrome.findElement(By.xpath("//*[@class=\"btn btn-secondary mx-md-3 btn-block btn-sm-inline\"]"));
 
 		botonInicioSesion.click();
@@ -90,7 +90,7 @@ public class TestLogin {
 		claveIngreso.sendKeys("Prueba2019*");
 
 		
-		// Obtener y dar click al botón de ingreso
+		// Obtener y dar click al botÃ³n de ingreso
 		WebElement botonIngresar = driverChrome.findElement(By.xpath("//*[@class=\"btn btn-secondary\"]"));
 
 		botonIngresar.click();
@@ -108,7 +108,7 @@ public class TestLogin {
 
 		String textoDelElemento = nombreSesion.getText();
 
-		String textoQueYoEsperaba = "¡Hola, Prueba!";
+		String textoQueYoEsperaba = "Â¡Hola, Prueba!";
 
 		
 		// comparar usando assert de Junit
