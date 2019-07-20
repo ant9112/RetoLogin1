@@ -14,7 +14,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 /**
- * @author Andrea en la rama Desarrollo
+ * @author Andrea
  *
  */
 public class TestLogin {
