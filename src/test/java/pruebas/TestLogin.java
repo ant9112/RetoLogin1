@@ -14,11 +14,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 /**
- * @author usuario
+ * @author Andrea en la rama Desarrollo
  *
  */
 public class TestLogin {
 
+	
 	//Global la variable para ser llamada desde el test
 	WebDriver driverChrome;
 	
